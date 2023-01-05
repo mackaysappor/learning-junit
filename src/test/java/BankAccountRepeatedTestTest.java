@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(BankAccountParameterResolver.class)
 public class BankAccountRepeatedTestTest {
-    @RepeatedTest(5) // we use the @RepeatedTeest annotation to repeat tests based on the number specified
+    @RepeatedTest(5) // we use the @RepeatedTest annotation to repeat tests based on the number specified
     @DisplayName("Deposited 500 successfully")
     public void testDeposit(BankAccount bankAccount) {
         bankAccount.deposit(500);
